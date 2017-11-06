@@ -1,0 +1,12 @@
+{% extends "blog/base.html"%}
+
+{% block content %}
+
+<h1>Articles</h1>
+{% for article in articles %}
+    <h4><a href="{% url 'article' article.id %}">{{ article.title }}</a></h4>
+    <p>{{ article.get_short_text }}</p>
+    <p><a href="{% url 'article' article.id %}">Read more</a></p>
+{% endfor %}
+
+{% endblock content %}
