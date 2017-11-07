@@ -23,4 +23,5 @@ def show_article(request, article_id):
 
 @login_required
 def about(request):
-    return render(request, 'blog/about.html')
+    username = auth.get_user(request).username
+    return render(request, 'blog/about.html', {'username':username})
