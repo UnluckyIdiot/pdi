@@ -80,12 +80,11 @@ WSGI_APPLICATION = 'pdi.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'django_db_1',
-        'USER' : 'tz',
-        'PASSWORD' : 'pro100lol',
-        'HOST' : '127.0.0.1',
-        'PORT' : '5432',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'django_db',
+        'USER': 'django',
+        'PASSWORD': 'pro100lol',
+
     }
 }
 
